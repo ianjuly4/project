@@ -5,3 +5,6 @@
 const header = document.createElement("h1")
 document.body.append(header)
 header.textContent = "WELCOME TO DOGGY DAYCARE"
+header.style.color = "BLUE"
+header.style.right = "100px"
+

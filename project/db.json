@@ -4,6 +4,11 @@
       "message": "https://images.dog.ceo/breeds/shiba/shiba-14.jpg",
       "status": "success",
       "id": 1
+    },
+    {
+      "message": "https://images.dog.ceo/breeds/collie-border/n02106166_3996.jpg",
+      "status": "success",
+      "id": 2
     }
   ]
 }

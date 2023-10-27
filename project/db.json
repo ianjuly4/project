@@ -9,6 +9,16 @@
       "message": "https://images.dog.ceo/breeds/collie-border/n02106166_3996.jpg",
       "status": "success",
       "id": 2
+    },
+    {
+      "message": "https://images.dog.ceo/breeds/samoyed/n02111889_3399.jpg",
+      "status": "success",
+      "id": 3
+    },
+    {
+      "message": "https://images.dog.ceo/breeds/husky/n02110185_248.jpg",
+      "status": "success",
+      "id": 4
     }
   ]
 }

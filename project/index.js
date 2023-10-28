@@ -4,7 +4,3 @@
   //})
   //.then(function () {
   //});
-//const shibu = function(){
-
-//}
-//document.querySelector(".Shiba Inu").addEventListener(mouseover, shibu)

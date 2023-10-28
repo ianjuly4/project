@@ -4,3 +4,13 @@
   //})
   //.then(function () {
   //});
+
+  //eventListener = mouseover
+
+  //eventListener = click
+
+  //eventListner = form
+
+  //eventListener = DOMContentLoaded
+
+  //eventListner = alert

@@ -6,13 +6,12 @@
   //});
 
   //eventListener = mouseover
-  const ShibaMouseOver = document.querySelector("img");
-  console.log(ShibaMouseOver)
+  const ShibaMouseOver = document.querySelector(".Shiba");
   
   ShibaMouseOver.addEventListener('mouseover', function() {
    alert('Im kind of stubborn!');
   });
-  
+
   //eventListener = click
 
   //eventListner = form

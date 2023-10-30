@@ -6,13 +6,12 @@
   //});
 
   //eventListener = mouseover
-  const ShibaMouseOver = document.querySelector(".Shiba");
+  const ShibuMouseOver = document.querySelector(".ShibuP")
   
-  //ShibaMouseOver.addEventListener('mouseover', function() {
-   //alert('Even though I am cute and cuddly I am not a big fan of cats');
-  //});
-
-
+  ShibuMouseOver.addEventListener('mouseover', function(){
+    alert("")
+  })
+  
   //eventListener = click
   const ShibaMouseClick = document.querySelector(".Shiba")
   const BorderMouseClick = document.querySelector(".Border")

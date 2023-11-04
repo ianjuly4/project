@@ -29,6 +29,11 @@
       "message": "https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg",
       "status": "success",
       "id": 7
+    },
+    {
+      "message": "https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3359.jpg",
+      "status": "success",
+      "id": 8
     }
   ]
 }

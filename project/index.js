@@ -9,7 +9,7 @@
   const ShibuMouseOver = document.querySelector(".ShibuP")
   
   ShibuMouseOver.addEventListener('mouseover', function(){
-    alert("")
+    alert("Fun Fact: Shiba Inus almost became extinct during WW2 from bombing raids and a highly contagious canine viral infection")
   })
   
   //eventListener = click

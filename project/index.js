@@ -49,19 +49,5 @@
 
   //eventListner = alert
 
-  const dogPictures =  {
-    Breed: {
-      ShibaInu: "https://images.dog.ceo/breeds/shiba/shiba-14.jpg",
-      BorderCollie: "https://images.dog.ceo/breeds/collie-border/n02106166_3996.jpg",
-      Samoyed: "https://images.dog.ceo/breeds/samoyed/n02111889_3399.jpg",
-      Husky: "https://images.dog.ceo/breeds/husky/n02110185_248.jpg",
-      Dachsund: "https://images.dog.ceo/breeds/dachshund/dachshund-3.jpg",
-      Pitbull: "https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg",
-      Terrier: "https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3359.jpg",
-
-    },
-  };
-
-//function formPictures() 
-  //for (const Breed in dogPictures) {
-  //}
+ 
+  

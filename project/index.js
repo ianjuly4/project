@@ -1,35 +1,24 @@
+// dog fetch
+function dogFetchRequest(){
+  fetch("http://localhost:3000/dogData")
+  .then(res => res.json())
+  .then(dogdata => dogdata.forEach(dog => renderDog(dog)))
+}dogFetchRequest()
 
-fetch("http://localhost:3000/project")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function () {
-  });
-  
+// dog forEach 
+//dogData.forEach(renderDog(dog){
+  //console.log(dog);
+//}); 
 
-
-
-//submit event
-document.addEventListener("DOMContentLoaded", () => {
-  let form = document.querySelector("#dog_form")
-  form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    portrayPictures(e.target.dog_type.value)
-  })
-})
-
-
-//display below form
-function portrayPictures(dogs){
-  let p = document.createElement('p')
-  p.textContent = (dogs = ShibaInu.json())
-  document.querySelector(".dogPicturesContainer").appendChild(p)
+//renderDog function
+function renderDog(dog){
+  let p = document.createElement("p")
+  p.className = "paragraph"
+  p.innerHTML = `
+    <img src="${dog.imageUrl}">
+    <p>${dog.greeting}</p> 
+    `
+  document.querySelector('.dogPicturesContainer').appendChild(p)
 }
 
-//iteration function
-function picturesIteration(array){
-  for(const dog of dogPictures){
-    if(dog === array)
-    return array
-  }
-}
+

@@ -34,6 +34,17 @@
       "message": "https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3359.jpg",
       "status": "success",
       "id": 8
+    },
+    {
+      "div": {
+        "img": {
+          "@src": "https://images.dog.ceo/breeds/shiba/shiba-14.jpg",
+          "@alt": "Shiba Inu",
+          "@class": "Shiba"
+        },
+        "p": "Hi! I'm Macey. My ancestors are from Japan, but Me, I was born here in Denver. I am only 2 years old, but dont let that fool you I am very strong. Even though I have this cute and cuddly appearance, I hope to be a great huntress one day."
+      },
+      "id": 9
     }
   ]
 }

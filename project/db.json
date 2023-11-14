@@ -3,39 +3,40 @@
     {  
         "imageUrl": "https://images.dog.ceo/breeds/shiba/shiba-14.jpg",
         "greeting": "Hi! I'm Macey. My ancestors are from Japan, but Me, I was born here in Denver. I am only 2 years old, but dont let that fool you I am very strong. Even though I have this cute and cuddly appearance, I hope to be a great huntress one day.",
+        "fact": "Fun Fact: the origin of the name of my breed remains a mystery. 'Inu' means dog in Japanese and 'Shiba' means brushwood in Japanese. So its possible I was named for my coat or where I used to hunt.",
         "breed": "Shiba Inu"
       
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/collie-border/n02106166_3996.jpg",
         "greeting": "Well Hello There! I'm Max. I work hard and cuddle even harder. Some would call me a workaholic, but is it work when I'm having fun? I have a beautiful and playful exterior, but that is to mask my atheltic, agile, and durable build. I might be a tad bit shy around strangers, but I love playing with my friends.",
+        "fact" : "Fun Fact: the name of my breed originates from Scotland, mostly the 'border' of Scotland and England. And 'Collie' means sheepdog in scottish",
         "breed": "Border Collie"
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/samoyed/n02111889_3399.jpg",
-        "greeting": "success",
+        "greeting": "Greetings! We're Anna and Elsa. We love the cold, hence the names. We are very playful and hate solitude, so please take both of us home with you. We could definetly use some training, we will get into a lot of trouble other wise. We're pretty resilent against cold and bumps and bruises, our beautiful coat sees to that",
+        "fact" : "Fun Fact: our beautiful smiles have more than one function other than making us look adorable. Since we're snow dogs, our smiles allow us to not form icicles on ours mouths.",
         "breed": "Samoyed"
       },
       { 
         "imageUrl": "https://images.dog.ceo/breeds/husky/n02110185_248.jpg",
-        "greeting": "success",
+        "greeting": "Woof! Nice to meet ya! I'm Chase.",
+        "fact" : "",
         "breed": "Husky"
         
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/dachshund/dachshund-3.jpg",
-        "greeting": "success",
+        "greeting": "I brought you a present, sorry I'm Milly its nice to meet you",
+        "fact" : "",
         "breed": "Dachshund"
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg",
-        "greeting": "success",
+        "greeting": "What are you doing? Anyways, I'm so happy to meet you. The names Fenway.",
+        "fact" : "",
         "breed": "Pitbull"
-      },
-      {
-        "imageUrl": "https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3359.jpg",
-        "greeting": "success",
-        "breed": "Terrier"
       }
     ] 
 }

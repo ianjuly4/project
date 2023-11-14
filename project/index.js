@@ -5,13 +5,13 @@ function fetchData(event) {
   fetch('http://localhost:3000/dogData')
     .then(response => response.json())
     .then(data => {
-      const dogType = event.target.dog_type.value; // Store the value in a variable
+      const dogType = event.target.dog_type.value; 
       let foundDog = data.find(dogFinder);
       console.log(foundDog);
       portrayPictures(foundDog)
 
       function dogFinder(dog) {
-        return dog.breed === dogType; // Use the variable in the dogFinder function
+        return dog.breed === dogType; 
       }
     })
     .catch(error => {
@@ -19,27 +19,42 @@ function fetchData(event) {
     });
 }
 
+
 //create submit event
 const init = () => {
   const inputForm = document.querySelector("form");
 
   inputForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    fetchData(event); // Pass the event object to the fetchData function
+    fetchData(event); 
     console.log(event.target.dog_type.value)
     
   });
 };
-
 document.addEventListener("DOMContentLoaded", init);
+
+//form reset eventListener
+function formReset(){
+  const form = document.querySelector('.id_form');
+  const resetButton = document.querySelector('.button');
+
+resetButton.addEventListener('submit', function() {
+form.reset();
+})
+
+}formReset()
 
 //create render function 
 function portrayPictures(dog) {
   let div = document.createElement('div');
   div.className = "div1";
-  let img = document.createElement('img'); // Create an <img> element
-  img.src = `${dog.imageUrl}`; // Set the source of the image
-  div.appendChild(img); // Append the image to the div
+  let img = document.createElement('img'); 
+  img.src = `${dog.imageUrl}`; 
+  img.addEventListener("mouseover", showFact)
+    function showFact() {
+      alert(`${dog.fact}`)
+    }
+  div.appendChild(img); 
   let p = document.createElement('p');
   p.textContent = `${dog.greeting}`;
   div.appendChild(p); 

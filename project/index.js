@@ -1,24 +1,20 @@
-// dog fetch
-function dogFetchRequest(){
-  fetch("http://localhost:3000/dogData")
-  .then(res => res.json())
-  .then(dogdata => dogdata.forEach(dog => renderDog(dog)))
-}dogFetchRequest()
 
-// dog forEach 
-//dogData.forEach(renderDog(dog){
-  //console.log(dog);
-//}); 
+const init = () => {
+  const inputForm = document.querySelector("form");
 
-//renderDog function
-function renderDog(dog){
-  let p = document.createElement("p")
-  p.className = "paragraph"
-  p.innerHTML = `
-    <img src="${dog.imageUrl}">
-    <p>${dog.greeting}</p> 
-    `
-  document.querySelector('.dogPicturesContainer').appendChild(p)
-}
+  inputForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = document.querySelector("#dog_type");
+
+    console.log(input.value);
+
+    fetch(`http://localhost:3000/dogData/${input.value}`)
+      .then(res => res.json())
+      .then(data => {
 
 
+    })
+  });
+};
+
+document.addEventListener("DOMContentLoaded", init);

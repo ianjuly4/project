@@ -1,34 +1,85 @@
-function dogFetchRequest(){
-  fetch("http://localhost:3000/dogData")
-  .then((res) => res.json())
-  .then((res) =>  dogDataVariable(res));
-} dogFetchRequest()
 
-function dogDataVariable(){
-   const dogData = res
+
+
+
+//display below form
+function portrayPictures(dogs){
+  let div = document.createElement('div')
+      div.className = "div1"
+      div.textContent = `${dogs.imageUrl}`
+  document.querySelector(".dogPicturesContainer").appendChild(div)
+  let p = document.createElement('p')
+      p.textContent = `${dogs.greeting}`
+  document.querySelector(".div1")
 }
 
-function renderOneDog(dogData){
-  let img = document.createElement('img')
-  //img.src=`${dogData.imageUrl}`
-  let p = document.createElement('p')
-  //p.textContent = `${dogData.greeting}`
-  document.querySelector(".dogPicturesContainer").appendChild(p)
-  document.querySelector('p').appendChild(img)
-} renderOneDog()
+/const dogFind = dogData.find((dog) => dog === dogEvent)
+
+//function dogfilter() {
+  //for (const dog of dogData) {
+    //console.log(dog.greeting);
+  //}
+//}
+//dogfilter();
+
+// dog fetch
+function dogFetchRequest(){
+  fetch("http://localhost:3000/dogData")
+  .then(res => res.json())
+  .then(dogData => dogFilter(dogData))
+  //.then(dogdata => dogdata.forEach(dog => renderDog(dog)))
+}dogFetchRequest()
+
+//function dogFilter() {
+  //for (const dogs of dogData) {
+    //if (dogs.dog === dogEvent) {
+      //return dogdata.forEach(dog => renderDog(dog))
+    //}
+  //}
+//}
+//dogFilter();
 
 //submit event
-//document.addEventListener("DOMContentLoaded", () => {
-  //let form = document.querySelector("#dog_form")
-  //form.addEventListener("submit", (e) => {
-    //e.preventDefault()
-    //portrayPictures(e.target.dog_type.value)
-  //})
-//})
-//display below form
-//function portrayPictures(dogs){
-  //let p = document.createElement('p')
-  //p.textContent = dogs
-  //document.querySelector(".dogPicturesContainer").appendChild(p)
+const dogEvent = document.addEventListener("DOMContentLoaded", () => {
+  let form = document.querySelector("#dog_form")
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    renderDog(e.target.dog_type.value)
+  })
+})
 
-//}
+
+// dog forEach 
+//dogData.forEach(renderDog(dog){
+  //console.log(dog);
+//}); 
+
+//renderDog function
+function renderDog(dog){
+  let p = document.createElement("p")
+  p.className = "paragraph"
+  p.innerHTML = `
+    <img src="${dog.imageUrl}">
+    <p>${dog.greeting}</p> 
+    `
+  document.querySelector('.dogPicturesContainer').appendChild(p)
+}
+
+const init = () => {
+  const inputForm = document.querySelector("#dog_form");
+
+  inputForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = document.querySelector("#dog_type");
+
+    fetch("http://localhost:3000/dogData")
+      .then(res => res.json())
+      .then(dogData => {
+        for (const dogs of dogData) {
+          if (dogs.dog === `${input}`) {
+          console.log(dogs.dog)}
+        }
+      })
+  })
+}
+document.addEventListener("DOMContentLoaded", init);

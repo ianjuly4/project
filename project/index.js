@@ -18,7 +18,18 @@ function fetchData(event) {
       console.error('Error:', error);   
     });
 }
+//adoption alert event listener
+function adoptionAlert(){
+  document.querySelector("#dog_type").addEventListener("click", showAlert)
+}
 
+function showAlert() {
+  alert('Please go to this website to fill out an adoption form');
+}
+
+const delayInMilliseconds = 3000; 
+
+setTimeout(showAlert, delayInMilliseconds);
 
 //create submit event
 const init = () => {

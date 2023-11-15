@@ -28,14 +28,14 @@
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/dachshund/dachshund-3.jpg",
-        "greeting": "I brought you a present, sorry I'm Milly its nice to meet you",
-        "fact" : "",
+        "greeting": "I brought you a present, sorry I'm Milly its nice to meet you. I may not be much to look at, or that athletic, but I am down for anything. I am smart and vigilant, and love to 'talk the talk,' which makes me a great watch dog. Don't mind my cute and unique fool you, I was bred to hunt dangerous prey.",
+        "fact" : "Fun Fact: we were heavily used in propaganda for Germany in WWW1, and Kaiser Wilhelm II absolutely adores us. This lead to the decline of our populatiry and the 'rebranding' of our name.",
         "breed": "Dachshund"
       },
       {
         "imageUrl": "https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg",
-        "greeting": "What are you doing? Anyways, I'm so happy to meet you. The names Fenway.",
-        "fact" : "",
+        "greeting": "What are you doing? Anyways, I'm so happy to meet you. The names Fenway. Some call me a momma's boy, but I like to think of it as dependable and loyal. And yes, I get a little scared when I hear loud noises, who doesn't? I like puzzles, whether they be mental or physical. I am supposed to be highly trainable, but I'd rather cuddle.",
+        "fact" : "Fun Fact: our love for puzzles and being highly trainable makes us the one of the perfect candidates for 'showbiz.'",
         "breed": "Pitbull"
       }
     ] 

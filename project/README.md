@@ -5,5 +5,7 @@ Border Collie info https://www.akc.org/dog-breeds/border-collie/
 Border Collie fun fact https://www.akc.org/expert-advice/lifestyle/10-border-collie-facts/
 Samoyed info https://www.akc.org/dog-breeds/samoyed/
 Samoyed fun fact https://www.akc.org/dog-breeds/samoyed/
-Husky info
-Husky fun fact
+Husky info https://www.akc.org/dog-breeds/siberian-husky/ 
+Husky fun fact https://www.akc.org/expert-advice/lifestyle/10-facts-siberian-huskies/
+Pitbull info
+Pitbull fun fact

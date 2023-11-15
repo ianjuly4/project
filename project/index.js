@@ -1,7 +1,7 @@
 
 
 //fetch request
-function fetchData(event) {
+const fetchData = (event) => {
   fetch('http://localhost:3000/dogData')
     .then(response => response.json())
     .then(data => {
@@ -19,15 +19,15 @@ function fetchData(event) {
     });
 }
 //adoption alert event listener
-function adoptionAlert(){
+const adoptionAlert = () => {
   document.querySelector("#dog_type").addEventListener("alert", showAlert)
 }
 
-function showAlert() {
+const showAlert = () => {
   alert("WOOF! WOOF! the adoption process is just one WOOF away!        Click Here");
 }
 
-const delayInMilliseconds = 1000; 
+const delayInMilliseconds = 3000; 
 
 setTimeout(showAlert, delayInMilliseconds);
 
@@ -45,18 +45,18 @@ const init = () => {
 document.addEventListener("DOMContentLoaded", init);
 
 //form reset eventListener
-function formReset(){
+const formReset = () =>{
   const form = document.querySelector('.id_form');
   const resetButton = document.querySelector('.button');
 
 resetButton.addEventListener('submit', function() {
 form.reset();
 })
-
-}formReset()
+}
+formReset()
 
 //create render function 
-function portrayPictures(dog) {
+const portrayPictures = (dog) => {
   let div = document.createElement('div');
   div.className = "div1";
   let img = document.createElement('img'); 
